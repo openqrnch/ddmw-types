@@ -4,7 +4,7 @@ use std::str::FromStr;
 use crate::Error;
 
 #[derive(Debug, PartialEq)]
-pub(crate) enum Protocol {
+pub enum Protocol {
   Ethernet,
   UDP
 }
@@ -33,7 +33,7 @@ impl FromStr for Protocol {
 
 
 #[derive(Debug, PartialEq)]
-pub(crate) enum ProtImpl {
+pub enum ProtImpl {
   Pcap,
   Generic
 }
